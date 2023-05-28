@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <main>
+        <div id="fondo">            
+            <div class="logo">
+                <img src="imagenes/Logo.png">
+            </div>
+            <section class="text-ingreso"><!-- Ingreso de palabra -->
+                <textarea class="ingresoTexto" id="ingresoTexto" cols="30" rows="10"
+                    placeholder="Escriba el texto a encriptar"></textarea>
+            </section>
+            <div class="terminos">
+                <img src="imagenes/Vector.png">
+                <p> Solo letras minusculas y sin acéntos </p>
+            </div>
+            <section class="botones"><!-- botones Encriptado y Desincriptado-->
+                <button class="botonEncriptar" onclick="encriptado()">Encriptar</button>
+                <button class="botonDesincriptar" onclick="desincriptar()">Desincriptar</button>
+                <button class="botonCopia" onclick="botonCopia()">Copiar</button>
+            </section>
+            <section class="desicriptado"> <!--Salida de Palabra-->
+                <img src="imagenes/Muñeco.png" alt="Encriptado de Texto"><!--imagen del encriptado-->
+                <div class="mensajeEncriptado" >
+                    <h2 >Ningún mensaje fue encontrado</h2>
+                    <p >Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div>
+                    <textarea class="salidaText" id="salidaText" cols="30" rows="10"></textarea>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy Copyright Jorge Martinez Gupo G5 Alura.</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
